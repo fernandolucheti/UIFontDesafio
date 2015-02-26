@@ -11,5 +11,13 @@
 @interface ViewController : UIViewController
 
 
+- (IBAction)mudarFonte:(UIButton *)sender;
+
+
+- (IBAction)botaoAlterarFonte:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *Nome;
+@property (weak, nonatomic) IBOutlet UITextField *inputNome;
+
 @end
 

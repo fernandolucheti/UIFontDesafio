@@ -24,4 +24,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)mudarFonte:(UIButton *)sender {
+    
+    _Nome.font = [UIFont fontWithName:sender.titleLabel.text size:14];
+}
+
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+        [_inputNome resignFirstResponder];
+}
+
+
+- (IBAction)botaoAlterarFonte:(UIButton *)sender {
+    
+        _Nome.text = _inputNome.text;
+    [_inputNome resignFirstResponder];
+    
+}
 @end
